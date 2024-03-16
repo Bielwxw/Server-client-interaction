@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar-livros 📚</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="shortcut icon"
+    href="data:image/png;base64,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"
+    type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="search-container">
+    <h1>Área de Busca de Livros🔎📚</h1>
+    <form>
+      <div class="input-container">
+        <div class="input-container">
+          <input type="text" id="titulo" placeholder="Busca de Título" disabled>
+          <input type="checkbox" id="buscarPorTitulo" onchange="habilitarBusca('titulo')">
+        </div>
+        <div class="input-container">
+          <input type="text" id="ano" placeholder="Busca por Ano" disabled>
+          <input type="checkbox" id="buscarPorAno" onchange="habilitarBusca('ano')">
+        </div>
+      </div>
+      <br><br>
+      <div style="display: grid;grid-template-columns: 32px 1fr; gap: 1em;">
+        <a href="/">
+          <svg xmlns="http://www.w3.org/2000/svg" color="black" width="32" height="32" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+          </svg>
+        </a>
+        <input type="submit" value="Pesquisar">
+      </div>
+    </form>
+  </div>
+
+  <main>
+    <% if (lista.length === 0) {%>
+      <p>Nenhum livro foi encontrado!</p>
+    <% } else {%>
+      <div class="table">
+        <div class="tr">
+          <div class="th">ID</div>
+          <div class="th">Titulo</div>
+          <div class="th">Autor</div>
+          <div class="th">Ano</div>
+        </div>
+        <% lista.forEach(livro => {%>
+          <div class="tr">
+            <div class="td"><%= livro.id %></div>
+            <div class="td"><%= livro.titulo %></div>
+            <div class="td"><%= livro.autor %></div>
+            <div class="td"><%= livro.ano %></div>
+          </div>
+        <% }) %>
+      </div>
+    <% } %>
+  </main>
+
+
+
+
+
+
+  <script src="/js/ajustes.js"></script>
+</body>
+</html>

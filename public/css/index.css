@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+    height: max-content;
+    width: 100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.search-container {
+    position: sticky;
+    top: 0;
+    padding: 2em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color:#2f2f2f;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+input[type="submit"] {
+    width: 19%;
+    padding: 10px 20px;
+    background-color: black; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-end;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #2f2f2f; /* Cor de fundo ao passar o mouse */
+}
+
+main {
+    padding: 2.5em 3.5em;
+}
+
+.table {
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreamento */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #f5f5f5;
+  }
+
+.tr {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    border-bottom: 1px solid #ccc;
+}
+
+.td {
+    padding: 15px; /* Aumentar o espaçamento interno */
+}
+
+.th {
+    padding: 15px;
+    font-weight: bold;
+    background-color: #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Estilo hover para realçar as linhas */
+.tr:hover {
+    background-color: #f9f9f9; /* Cor de fundo ao passar o mouse */
+}
